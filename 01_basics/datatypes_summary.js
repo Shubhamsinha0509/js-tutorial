@@ -26,3 +26,30 @@ let myObj = {
  const myFunction = function(){
     console.log("Hello World")
  }
+
+
+ // +++++++++++++++++++++++++++++++++++++++++++++++++
+
+ // Stack (Primitive), Heap (Non-Primitive)
+
+ let myName = "Shubhamsinha"
+
+ let anotherName = myName
+
+ anotherName = "spiderman"
+ console.log(myName)        //shubhamsinha
+ console.log(anotherName)   //spiderman
+
+
+ let userOne = {
+   name : "user",
+   email : "user@gmail.com",
+   upi : "user@ybl"
+ }
+
+ let userTwo = userOne      // It refers to value of userOne 
+
+ userTwo.email = "Shubham@gmail.com"  // email changed in userOne
+
+ console.log(userOne.email)   //shubham@gmail.com
+ console.log(userTwo.email)   //shubham@gmail.com
